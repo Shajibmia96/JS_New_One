@@ -1,11 +1,11 @@
 let scrore ='33a';
 
-console.log(scrore); // 33
+// console.log(scrore); // 33
 
 let scroreNumber = Number(scrore); // convert string to number
-console.log(typeof scrore); // number
-console.log(scroreNumber); // 33
-console.log(typeof scroreNumber); // number
+// console.log(typeof scrore); // number
+// console.log(scroreNumber); // 33
+// console.log(typeof scroreNumber); // number
 
 // "33" => 33
 // "33a" => NaN
@@ -17,8 +17,8 @@ console.log(typeof scroreNumber); // number
 let isActive = ' eew';
 let isActiveNumber = Boolean(isActive); // convert boolean to number
 
-console.log(isActiveNumber); // true
-console.log(typeof isActiveNumber); // boolean
+// console.log(isActiveNumber); // true
+// console.log(typeof isActiveNumber); // boolean
 
 // isActive = 1 => true
 // isActive = 0 => false    
@@ -30,3 +30,11 @@ console.log(typeof isActiveNumber); // boolean
 // isActive = NaN => false
 
 
+//**************************** Operator ********************************** */
+
+let value = 33;
+let negValue = -value;
+//console.log(negValue); // -33
+
+let positiveValue = -negValue;
+console.log(positiveValue); // 33
