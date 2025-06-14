@@ -19,3 +19,40 @@ const nonPrimitiveTypes = {
   function: function() { return "I am a function"; }
 };
 
+
+
+// ************************ Memory Type***********************************
+
+
+Stack(primitiveTypes);
+
+Heap(nonPrimitiveTypes);
+
+// what is  stack and heap?
+// Stack is a memory structure that stores primitive data types and function calls. 
+// It operates in a Last In First Out (LIFO) manner, meaning the last item added is the first one to be removed.
+function Stack(data) {
+  console.log("Stack Memory:");
+  for (const key in data) {
+    console.log(`${key}: ${data[key]} (Type: ${typeof data[key]})`);
+  }
+}   
+
+// heap is a memory structure that stores non-primitive data types like objects and arrays.
+// It allows for dynamic memory allocation and is managed by the JavaScript engine's garbage collector.
+
+
+ function Heap(data) {
+  console.log("Heap Memory:");
+  for (const key in data) {
+    if (Array.isArray(data[key])) {
+      console.log(`${key}: [${data[key].join(", ")}] (Type: ${typeof data[key]})`);
+    } else if (typeof data[key] === 'object') {
+      console.log(`${key}: ${JSON.stringify(data[key])} (Type: ${typeof data[key]})`);
+    } else {
+      console.log(`${key}: ${data[key]} (Type: ${typeof data[key]})`);
+    }
+  }
+}   
+
+
