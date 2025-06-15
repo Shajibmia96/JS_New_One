@@ -20,23 +20,37 @@
 // isNaN()	            |  Checks if the value is NaN (Not a Number).
 // isFinite()          |  Checks if the number is finite.
 
-const value = 300.00099;
+// const value = 300.00099;
 
-const fixesValue = (value.toFixed(3));
-console.log(fixesValue);
+// const fixesValue = (value.toFixed(3));
+// console.log(fixesValue);
 
-const math = 53.53;
+// const math = 53.53;
 
-console.log(math.toPrecision(1));
+// console.log(math.toPrecision(1));
 
 
-const eng = "76.66";
+// const eng = "76.66";
 
 // console.log(eng.toString().length);
 // console.log(parseInt(eng)	);
 // console.log(typeof (parseFloat(eng))	);
 
-const hundreds = 1000000;
-console.log(hundreds.toLocaleString("en-IN"));
+// const hundreds = 1000000;
+// console.log(hundreds.toLocaleString("en-IN"));
 
+
+// **************************** math Expaine *********************
+
+  //  console.log(parseInt((Math.random() * 10)+1));
+
+  //  console.log(Math.ceil(3.5));
+  //  console.log(Math.floor(99.9));
+   
+   
+  //  print a random number 15 to 35 
+
+  console.log(Math.floor(Math.random() * (35-15+1)+15));
+  
+   
 
