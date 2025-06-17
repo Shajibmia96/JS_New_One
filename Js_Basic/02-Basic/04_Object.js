@@ -42,3 +42,14 @@ const regularUser = {
   // console.log(obj3);
   
 
+
+  const course = {
+     name: "MERN Stack",
+     price : 999,
+     instructor: "Jankar mahabub"
+  }
+
+  const {instructor} = course;
+
+  console.log(instructor);
+  
