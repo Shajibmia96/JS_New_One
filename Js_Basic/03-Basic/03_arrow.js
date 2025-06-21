@@ -62,3 +62,7 @@ const addTwo = (num1 , num2) => ({name : "Shajib Mia"});
     console.log("Hello bro this is a new addition a science");
     
 }) ()
+
+
+
+// .................javascript execution context......................
