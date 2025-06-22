@@ -22,12 +22,12 @@ for (let i = 1; i <= 10; i++) {
 
 for (let index = 1; index <= 20; index++) {
    if(index ==5){
-     // console.log(`detected number ${index}`);
+     // console.log(`detected ${index}`);
       break;
    }
   //console.log(`This in print ${index}`);
 }
-for (let index = 1; index <= 20; index++) {
+for (let index = 2; index <= 20; index++) {
    if(index ==5){
       console.log(`detected number ${index}`);
       continue;
