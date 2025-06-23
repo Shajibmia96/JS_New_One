@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create ELement in DOM</title>
+</head>
+  <style>
+        body{
+             background-color: #212121;
+             color: aliceblue;
+        }
+  </style>
+<body>
+     
+</body>
+ <script>
+     const div = document.createElement('div')
+     div.className = 'mainDiv'
+     div.id = Math.round(Math.random() * 100+1)
+     div.setAttribute('title', 'this is main div on this section')
+     div.style.backgroundColor = 'green';
+     div.style.padding = '12px'
+     const heading = document.createElement('h1')
+      const textNode = document.createTextNode("Bangladesh is a small country")
+       heading.appendChild(textNode)
+       div.appendChild(heading)
+       document.body.appendChild(div)
+     console.log(div)
+ </script>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Learning</title>
+
+    <style>
+         body{
+            background-color: #212121;
+            color: aliceblue;
+           
+         }
+         .countDay .day{
+              text-decoration: none;
+              list-style: none;
+              text-align: center;
+              margin-top: 25px;
+              font-size: 32px;
+         }
+    </style>
+</head>
+<body>
+         <div class="countDay">
+             
+                <div class="day">Friday</div>
+                <div class="day">Suterday</div>
+                <div class="day">Sunday</div>
+                <div class="day">Monday</div>
+                <div class="day">Tuesday</div>
+                <div class="day">Wednesday</div>
+                <div class="day">Thursday</div>
+             
+
+         </div>
+         
+</body>
+
+<!-- Script start form here -->
+
+  <script>
+       const countDay = document.querySelector('.countDay').children
+      
+       const dayText = (Array.from(countDay))
+       dayText.forEach( (item) => {
+            <!-- item.innerText = "Hello" -->
+       })
+
+       const oneday = document.querySelector('.day');
+       console.log(oneday)
+       
+         console.log(oneday.childElementCount)
+         console.log(oneday.nextElementSibling)
+         console.log(oneday.parentElement)
+  </script>
+</html>
