@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Use Function In DOM</title>
+  <style>
+      body {
+         background-color: black;
+         color: aliceblue;
+         padding: 100px;
+      }
+      .language{
+         display: flex;
+         justify-content: space-between;
+         gap: 25px;
+         list-style: none;
+      }
+      .language li {
+          font-size: 24px;
+          font-weight: 700;
+      }
+  </style>
+</head>
+<body>
+          <div>
+                <ul class="language">
+                  <li>Java</li>
+                </ul>
+          </div>
+</body>
+
+       <script>
+          
+            <!-- build a function to a li list language -->
+              
+             const addLanguage = (lang) => {
+                  
+                   const li = document.createElement('li');
+                   li.appendChild(document.createTextNode(lang))
+                   document.querySelector('.language').appendChild(li)
+             }
+
+             let langArr = ['Javascript', 'Roby', 'Python', "C++",'PHP', 'C#',"Mobile"]
+
+               langArr.forEach( (item) => {
+                           if(item === 'Python'){
+                                item = "Sadik vaiyer marka helicapter"
+                            //  console.log(item)
+                           }
+                      addLanguage(item)
+               })
+
+              //  const changeElement = document.querySelector('li:nth-child(3)')
+               //console.log(changeElement)
+               //changeElement.appendChild(document.createTextNode('Python'))
+
+               const removeElement = document.querySelector('li:last-child')
+                 removeElement.remove()
+
+                 console.log(removeElement)
+       </script>
+</html>
